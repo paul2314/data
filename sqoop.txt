@@ -1,0 +1,6 @@
+sqoop import --connect jdbc:mysql://localhost/gautam  --username root --password cloudera --table Company --target-dir=/user/cloudera/gautamfirst
+
+sqoop export --connect jdbc:mysql://localhost/gautam --username root --password cloudera --table Company --export-dir /user/cloudera/gautamfirst/part-m-00000
+
+
+

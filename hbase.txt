@@ -1,0 +1,18 @@
+Create ‘tablename’,’columnfamily1’,’columnfamily2’
+Or
+Create ‘tablename’,{NAME=>’column family’}
+
+put ‘tablename’,’row 1’,’columnfamily:column’,’value’
+To update : put ‘tablename’,’row 1’,’columnfamily:column’,’new value’
+
+To get one row : get ‘table name’,’row 1’
+To get one column : get ’table name’,’row 1’,{COLUMN => ‘column family:column’}
+To delete one whole row : deleteall ‘tablename’,’row1’
+
+Display whole table : scan ‘table name’
+Count number of rows : count ‘tablename’
+To empty table : truncate ’tablename’
+
+Before dropping a table disable it
+disable ‘tablename’
+drop ‘tablename’
